@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `#__coche_marcas`;
+DROP TABLE IF EXISTS `#__coche_modelos`;
+DROP TABLE IF EXISTS `#__coche_versiones`;
+DROP TABLE IF EXISTS `#__coche_tipos`;
+DROP TABLE IF EXISTS `#__coche_combustibles`;
+DROP TABLE IF EXISTS `#__coche_clasesequipamiento`;
+DROP TABLE IF EXISTS `#__coche_equipamientos`;
+DROP TABLE IF EXISTS `#__coche_equipamientosversion`;
+DROP TABLE IF EXISTS `#__coche_anuncios`;
+DROP TABLE IF EXISTS `#__coche_anuncioequipamientos`;
+DROP TABLE IF EXISTS `#__coche_fotos`;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset>
+                <field
+                        name="id"
+                        type="hidden"
+                />
+                
+                 <field 
+                        name="idVersion" 
+                        type="hidden" 
+                />
+                
+                
+                <field
+                        name="idEquipamiento"
+                        type="hidden"
+                /> 
+                <field
+                        name="idClaseequipamiento"
+                        type="hidden"
+                /> 
+                
+        </fieldset>
+</form>
