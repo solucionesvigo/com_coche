@@ -30,21 +30,11 @@ class CocheViewMarcas extends JViewLegacy
 				//~ 
                 
                 
-                echo '<pre>';
-				echo ' Entro views/marcas/views.html.php display';
-				print_r($_REQUEST);
-				echo '</pre>';
 				$this->items		= $this->get('Items');
-				echo '<pre>';
-				echo ' Vuelvo a views/marcas/views.html.php despues de hacer consulta';
-				echo '<br/> Numero items:'.count($this->items);
-				echo '</pre>';
-				
 				$this->pagination	= $this->get('Pagination');
 				$this->state		= $this->get('State');
 
 				/* Cargamos Submenu y con el parametro 'marcas' indicamos que está seleccionada*/
-				echo ' <br/> Ahora vemos que views:'.$this->getLayout(); 
 				
 				// Si no existe task entonce podemos carga el submenu
                 if (!isset ($_REQUEST['task'])):
@@ -53,9 +43,6 @@ class CocheViewMarcas extends JViewLegacy
                
                 // Obtener los datos desde el modelo
                 //~ $items = $this->get('Items');
-				echo '<pre>';
-				echo ' Vuelvo views/marcas/views.html.php de Modelo';
-				echo '</pre>';
                 //~ $pagination = $this->get('Pagination');
 
                 

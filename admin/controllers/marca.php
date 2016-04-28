@@ -8,13 +8,10 @@ jimport('joomla.application.component.controllerform');
 /**
  *Controlador PruebaSimon
  */
-class CocheControllerMarca extends JControllerLegacy
+class CocheControllerMarca extends JControllerForm
 {
 	public function addNew()
 		{
-		echo '<pre>';
-		echo ' Entro en addNew';
-		echo '</pre>';
 		// Get the input
 		$input = JFactory::getApplication()->input;
 		$pks = $input->post->get('cid', array(), 'array');

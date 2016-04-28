@@ -19,19 +19,13 @@ class CocheControllerMarcas extends JControllerAdmin
          
         public function getModel($name = 'marca', $prefix = 'CocheModel') 
         {
-                echo '<pre>';
-		echo ' Entro en addNew';
-		echo '</pre>';
-		
+        
                 $model = parent::getModel($name, $prefix, array('ignore_request' => true));
                 return $model;
         }
 
 		public function addNew()
 		{
-		echo '<pre>';
-		echo ' Entro en addNew';
-		echo '</pre>';
 		// Get the input
 		$input = JFactory::getApplication()->input;
 		$pks = $input->post->get('cid', array(), 'array');
