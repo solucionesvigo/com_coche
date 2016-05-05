@@ -1,10 +1,20 @@
 <?php
 // No permitir acceso directo al archivo
 defined('_JEXEC') or die('Restricted access');
-JHtml::_('behavior.tooltip');
+JHtml::_('behavior.formvalidator');
+JHtml::_('behavior.keepalive');
+JFactory::getDocument()->addScriptDeclaration("
+		Joomla.submitbutton = function(task)
+		{
+			if (task == 'version.cancel' || document.formvalidator.isValid(document.getElementById('version-form')))
+			{
+				Joomla.submitform(task, document.getElementById('version-form'));
+			}
+		};
+");
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_coche&layout=edit&id='.(int) $this->item->id); ?>"
-      method="post" name="adminForm" id="versions-form">
+      method="post" name="adminForm" id="version-form">
         <fieldset class="adminform">
                 <legend><?php echo JText::_( 'Detalles de la version' ); ?></legend>
                 <ul class="adminformlist">

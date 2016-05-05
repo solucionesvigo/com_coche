@@ -6,16 +6,16 @@ JHtml::_('behavior.keepalive');
 JFactory::getDocument()->addScriptDeclaration("
 		Joomla.submitbutton = function(task)
 		{
-			if (task == 'message.cancel' || document.formvalidator.isValid(document.getElementById('message-form')))
+			if (task == 'noledo.cancel' || document.formvalidator.isValid(document.getElementById('nodelo-form')))
 			{
-				Joomla.submitform(task, document.getElementById('message-form'));
+				Joomla.submitform(task, document.getElementById('nodelo-form'));
 			}
 		};
 ");
 
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_coche&layout=edit&id='.(int) $this->item->id); ?>"
-      method="post" name="adminForm" id="nodelos-form" class="form-validate">
+      method="post" name="adminForm" id="nodelo-form" class="form-validate">
         <fieldset class="adminform">
                 <legend><?php echo JText::_( 'Detalles del modelo' ); ?></legend>
                 <ul class="adminformlist">

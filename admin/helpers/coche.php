@@ -12,11 +12,11 @@ class CocheHelper extends JHelperContent
          */
         public static function addSubmenu($submenu) 
         {
-            echo '<pre>';
-			echo 'Entro en com_coche/helpers/coche.php en funcion addSubMenu<br/>';
-			echo ' Aqui utilizamod JSubMenuHelper cuando otros componentes utiliza JHtmlSidebar::....';
-			echo '</pre>';
-			
+            //~ echo '<pre>';
+			//~ echo 'Entro en com_coche/helpers/coche.php en funcion addSubMenu<br/>';
+			//~ echo ' Aqui utilizamod JSubMenuHelper cuando otros componentes utiliza JHtmlSidebar::....';
+			//~ echo '</pre>';
+			//~ 
 			//~ if(isset ($_REQUEST['view']))
             //~ {
                 //~ if($_REQUEST['view']=='nodelos' || $_REQUEST['view']=='versions' ||$_REQUEST['view']=='equipamientoclases' ||$_REQUEST['view']=='equipamientos')
