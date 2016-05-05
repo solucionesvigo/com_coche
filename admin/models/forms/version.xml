@@ -24,6 +24,7 @@
                         size="40"
                         class="inputbox"
                         default=""
+                        required="true"
                 />
                 <field                        
                         name="idTipo" 
@@ -34,6 +35,7 @@
                         query="SELECT * FROM #__coche_tipos" 
                         key_field="id" 
                         value_field="nombre"
+                        
                 />
                 <field                        
                         name="idCombustible" 

@@ -13,7 +13,10 @@
                         label="COM_COCHE_NODELO_IDMARCA_LABEL" 
                         query="SELECT id, nombre FROM #__coche_marcas" 
                         key_field="id" 
-                        value_field="nombre" />
+                        value_field="nombre" 
+                        required="true"
+                 />
+                        
                 <field
                         name="nombre"
                         type="text"
@@ -22,6 +25,7 @@
                         size="40"
                         class="inputbox"
                         default=""
+                        required="true"
                 />
         </fieldset>
 </form>
